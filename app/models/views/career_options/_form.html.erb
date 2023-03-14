@@ -1,11 +1,18 @@
 <div class="options-container">
   <div class="option-header">
+<<<<<<< HEAD:app/models/views/career_options/_form.html.erb
     <h1>Please enter your <%= current_user.career_options.count.even? ? "first" : "second" %> option</h1>
   </div>
     <div class="option-form">
+=======
+            <h1>Please enter your <%= current_user.career_options.count.even? ? "first" : "second" %> option</h1>
+
+      </div>
+    <div class="option-form mb-3">
+>>>>>>> 4728eb2e04e4bbbb3ea086b759fc0b856db6f507:app/views/career_options/_form.html.erb
       <%= simple_form_for @career_option do |f| %>
           <%= f.input :option, label: false, input_html: {class: "option-input"} %>
-          <%= f.submit "Next", :class => "priorities-btn" %>
+          <%= f.submit "Next", :class => "options-btn mt-3" %>
       <% end %>
     </div>
   </div>
